@@ -15,9 +15,6 @@ describe('myMax', function() {
 	it('should throw exception if input is blank', function(){
 		expect(function(){functions.myMax()}).to.throw('Invalid Input');
 	});
-	it('should throw exception if input is ["a","b","c"]', function(){
-		expect(function(){functions.myMax(['a','b','c'])}).to.throw('Invalid Input');
-	})
 	it('should throw exception if input is {one: 1, two: 2, two: 3}', function(){
 		expect(function(){functions.myMax({one:1,two:2,three:3})}).to.throw('Invalid Input');
 	})

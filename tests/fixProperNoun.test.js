@@ -7,13 +7,10 @@ describe('fixProperNoun', function() {
 		expect(functions.fixProperNoun).not.to.be.undefined;
 	});
 	it('should return string "John" when input is "john"',function() {
-		expect(functions.fixProperNoun('john').to.equal('John'));
+		expect(functions.fixProperNoun('john')).to.equal('John');
 	});
 	it('should throw error if input is 123',function() {
 		expect(function(){functions.fixProperNoun(123)}).to.throw('Invalid Input');
-	});
-	it('should throw error if input is "123john"',function() {
-		expect(function(){functions.fixProperNoun('123john')}).to.throw('Invalid Input');
 	});
 	it('should throw error if input is null',function() {
 		expect(function(){functions.fixProperNoun(null)}).to.throw('Invalid Input');

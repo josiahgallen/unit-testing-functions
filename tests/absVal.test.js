@@ -10,7 +10,7 @@ describe('absVal', function() {
 		expect(functions.absVal(-3)).to.equal(3);
 	});
 	it('should throw exception if input is "a"', function() {
-		expect(function(){funcitons.absVal('a')}).to.throw('Invalid Input');
+		expect(function(){functions.absVal('a')}).to.throw('Invalid Input');
 	});
 	it('should throw exception if input is [-3]', function() {
 		expect(function(){functions.absVal([-3])}).to.throw('Invalid Input');

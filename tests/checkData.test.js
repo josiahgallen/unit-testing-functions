@@ -15,7 +15,7 @@ describe('checkData', function() {
 	it('should throw an exception if the input is an array', function() {
 		expect(function() { functions.checkData(['a'])}).to.throw('Invalid input');
 	})
-	it('should throw an exception if input is a number', function() {
-		excpet(function() {functions.checkData(123)}).to.throw('Invalid input');
+	it('should throw an exception if input is a 123', function() {
+		expect(function() {functions.checkData(123)}).to.throw('Invalid input');
 	})
 });

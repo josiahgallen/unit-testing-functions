@@ -7,10 +7,10 @@ describe('concatenateArrays', function() {
 		expect(functions.concatenateArrays).not.to.be.undefined;
 	});
 	it('should return combined array if input is [1],[2]', function () {
-		excpect(functions.concatenateArrays([1],[2]).to.deep.equal([1,2]));
+		expect(functions.concatenateArrays([1],[2])).to.deep.equal([1,2]);
 	});
 	it('should throw exception if input is [a],[b]', function () {
-		expect(function() {functions.concatenateArrays(['a'],['b'])}).to.deep.throw('Invalid Input');
+		expect(function() {functions.concatenateArrays(['a'],['b'])}).to.throw('Invalid Input');
 	});
 	it('should throw exception if input is [1]', function () {
 		expect(function() {functions.concatenateArrays([1])}).to.throw('Invalid Input');
